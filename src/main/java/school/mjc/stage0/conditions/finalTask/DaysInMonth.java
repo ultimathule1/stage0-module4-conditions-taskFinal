@@ -6,7 +6,7 @@ public class DaysInMonth {
             System.out.println("invalid date");
         } else {
             boolean isLeapYear = false;
-            int days = 365 * year;
+            int days = 0;
 
             if (year % 4 == 0) {
                 isLeapYear = true;
@@ -15,7 +15,7 @@ public class DaysInMonth {
                 }
             }
 
-            if (isLeapYear && (month < 2)) {
+            if (isLeapYear && (month == 2)) {
                 days++;
             }
 

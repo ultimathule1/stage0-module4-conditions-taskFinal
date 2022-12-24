@@ -5,5 +5,7 @@ public class BitwiseValuesSwap {
         second^=first;
         first^=second;
         second^=first;
+        System.out.println(first);
+        System.out.println(second);
     }
 }
